@@ -135,6 +135,7 @@ variable "instances_ssh_user" {
   description = "Name of the administrator to access the bastion instance."
 }
 
+
 variable "instances_ssh_private_key" {
   type        = string
   sensitive   = true
