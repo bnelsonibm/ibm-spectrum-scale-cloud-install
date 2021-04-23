@@ -277,8 +277,6 @@ locals {
 }
 
 module "invoke_scale_playbook" {
-/*BDN Comment this out as development on test automation is going on.  There is an
-       error with ssh setup and the instance will wait for passwordless ssh to be setup and then fail.
                
   source     = "../../../resources/common/ansible_scale_playbook"
   region     = var.region
@@ -310,6 +308,5 @@ module "invoke_scale_playbook" {
 
   storage_instance_disk_map = jsonencode(merge(local.strg_vsi_ips_0_disks_dev_map, local.strg_vsi_ips_1_disks_dev_map, local.strg_vsi_ips_2_disks_dev_map, local.strg_vsi_ips_3_disks_dev_map, local.strg_vsi_ips_4_disks_dev_map, local.strg_vsi_ips_5_disks_dev_map, local.strg_vsi_ips_6_disks_dev_map, local.strg_vsi_ips_7_disks_dev_map, local.strg_vsi_ips_8_disks_dev_map, local.strg_vsi_ips_9_disks_dev_map, local.strg_vsi_ips_10_disks_dev_map, local.strg_vsi_ips_11_disks_dev_map, local.strg_vsi_ips_12_disks_dev_map, local.strg_vsi_ips_13_disks_dev_map, local.strg_vsi_ips_14_disks_dev_map, local.strg_vsi_ips_15_disks_dev_map))
 
-BDN */
       
 }
