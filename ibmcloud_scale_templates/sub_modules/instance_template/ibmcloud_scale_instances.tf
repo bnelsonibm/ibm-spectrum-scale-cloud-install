@@ -277,7 +277,7 @@ locals {
 }
 
 module "invoke_scale_playbook" {
-               
+/* *BDN skip since there is the passwordless check error
   source     = "../../../resources/common/ansible_scale_playbook"
   region     = var.region
   stack_name = var.stack_name
@@ -308,5 +308,5 @@ module "invoke_scale_playbook" {
 
   storage_instance_disk_map = jsonencode(merge(local.strg_vsi_ips_0_disks_dev_map, local.strg_vsi_ips_1_disks_dev_map, local.strg_vsi_ips_2_disks_dev_map, local.strg_vsi_ips_3_disks_dev_map, local.strg_vsi_ips_4_disks_dev_map, local.strg_vsi_ips_5_disks_dev_map, local.strg_vsi_ips_6_disks_dev_map, local.strg_vsi_ips_7_disks_dev_map, local.strg_vsi_ips_8_disks_dev_map, local.strg_vsi_ips_9_disks_dev_map, local.strg_vsi_ips_10_disks_dev_map, local.strg_vsi_ips_11_disks_dev_map, local.strg_vsi_ips_12_disks_dev_map, local.strg_vsi_ips_13_disks_dev_map, local.strg_vsi_ips_14_disks_dev_map, local.strg_vsi_ips_15_disks_dev_map))
 
-      
+BDN */   
 }
